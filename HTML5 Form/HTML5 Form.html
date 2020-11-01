@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Forum Pendaftaran</h2>
+<fieldset>
+<legend>ISI LAH FORM BERIKUT</legend>
+<form action="/action_page.php">
+<form>
+ <br><label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+ <br><label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+ <br><label for="fname">Username:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+</form>
+</form>
+<br><label for="fname">Email:</label<br><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="lname">Password:</label<br><br>
+  <input type="text" id="lname" name="lname" value="">
+</form>
+  
+</form>  
+<tr>
+ <br><br><input type="submit" value="Submit">
+  </tr>
+</form> 
+
+<div>
+ <br>
+	<label>Jenis Kelamin</label>
+		<input type="radio" name="jk" value="L"	/>LAKI-LAKI
+		<input type="radio" name="jk" value="P" />PEREMPUAN
+		</label>
+</div>
+
+<tr>
+<br>
+    	    <td valign="top">Tanggal Lahir</td>
+    	    <td>
+    	       <input type="text" style="width: 25px" placeholder="dd">
+    	       <input type="text" style="width: 25px" placeholder="mm">
+    	       <input type="text" style="width: 50px" placeholder="yyyy">
+    	    </td>
+			</br>
+    	</tr>
+
+<p>Tinggi Anda</p>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="300">
++<input type="number" id="b" value="105">
+=<output name="x" for="a b"></output>
+</form>
+
+</tr>
+<div>
+	<label>Alamat</label>
+	<div>
+		<textarea name="alamat_kirim:" rows="4" cols="30"></textarea>
+	</div>
+</div>
+	<div>
+		<label>Kota
+		<div>
+			<select name="Kota">
+				<optgroup> value=""></optgroup>
+				<option value="">Pilih Sesuai Kota Anda</option>
+				<option value="Jakarta">Jakarta</option>
+				<option value="Surabaya">Surabaya</option>
+				<option value="Depok">Depok</option>
+				<option value="Bekasi">Bekasi</option>
+			</select>
+			<form>
+			<br>
+			<input type="submit" value="Select">
+			</form>
+		</div>			
+	</div>
+	
+<b><p>Memilih Jam Untuk Awal Pendaftaran</p></b>
+
+<form action="/action_page.php">
+  <label for="Memilih Jam">Memilih Jam</label>
+  <select name="Jam" id="Jam Awal Masuk Pendaftaran">
+    <optgroup label="Masuk Pagi">
+      <option value="Jam 6:30">Jam 6:30</option>
+    </optgroup>
+    <optgroup label="Masuk Siang">
+      <option value="Jam 12:30">Jam 12:30</option>
+    </optgroup>
+  </select>
+  <br><br>
+</form>	
+	
+	<b><p>Mata Pelajaran Favorit</p></b>
+	
+<form action="/action_page.php" method="get">
+  <label for="browser">Mata Pelajaran Favorit</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Bhs Inggris">
+    <option value="Olahraga">
+    <option value="Bhs Indonesia">
+    <option value="PPKN">
+    <option value="IPA">
+    <option value="IPS">
+    <option value="AGAMA">
+    <option value="SBK">
+    <option value="Bahasa Jepang">
+  </datalist>
+</form>
+	
+	<p>Jika Sudah Di Isi Semua Pencet Tombol Berikut Untuk Login</p>
+	<form method="post" action="login user.html">
+       <button type="submit">Submit</button>
+	</form>
+</fieldset>
+</body>
+</html>
