@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <style>
+        select, img {
+            width: 250px;
+            height: auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+
+<body>
+<h2>Pilihlah Hewan Jagoan Anda</h2>
+    <select id="changeImage" onchange="change_image()">
+        <option disabled selected>Pilihlah Hewan Jagoan Anda</option>
+        <option value="hiu" >Hiu Putih</option>
+        <option value="trex">T-Rex</option>
+        <option value="harimau">Harimau</option>
+        <option value="singa">Singa</option>
+        <option value="kobra">Ular Kobra</option>
+        <option value="buaya">Buaya</option>
+    </select>
+    <br/>
+    <br/>
+    <img id="gambar" src="" alt="Pilih Hewan diatas untuk menampilkan gambar!" width="100px" height="auto">
+    <script>
+        function change_image() {
+            let images = document.getElementById("changeImage").value;
+            let gambar = document.getElementById("gambar");
+            if (images == "hiu"){
+                gambar.src="./image/hiu.png";
+                alert(`Ini adalah foto Hiu Putih ${images}`);
+            }else if (images == "trex"){
+                gambar.src="./image/trex.png";
+                alert(`Ini adalah foto T-Rex ${images}`);
+            }else if (images == "harimau"){
+                gambar.src="./image/harimau.png";
+                alert(`Ini adalah foto Harimau ${images}`);
+            }else if (images == "singa"){
+                gambar.src="./image/singa.png";
+                alert(`Ini adalah foto Singa ${images}`);
+            }else if (images == "kobra"){
+                gambar.src="./image/kobra.png";
+                alert(`Ini adalah foto Ular Kobra ${images}`);
+            }else if (images == "buaya"){
+                gambar.src="./image/buaya.png";
+                alert(`Ini adalah foto Buaya ${images}`);
+            }
+        }
+    </script>
+</body>
+
+</html>
